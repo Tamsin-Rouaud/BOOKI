@@ -17,12 +17,54 @@ body {
     display: flex;
     justify-content: center;
 }
+header {
+    display: flex;
+    
+    
+    
+    }
+#logo img{
+   padding:30px 0px;
+   max-width: 61px;
+   
+   display: block;
+   
+   }
+   #espacement{
+    max-width: 950px;
+    display: block;
+   }
+#navbar {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 250px;
+    max-width: 279px;
+    padding: 0px 25px;
+ 
+   }
+   
+   #navbar li {
+    margin: 0 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
 
+  #hebergements{
+    color: #0065FC;
+    
+  }
+  #hebergements:hover{
+    border-top: solid 1px #0065FC;
+    padding-top: 20px;
+  }
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    
 }
 
 a {
