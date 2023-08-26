@@ -13,51 +13,52 @@
     color: var(--main-color);
 }
 
+/*******HEADER********/
+
+header{
+    display: flex;
+    height: 79px;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#logo{
+    height: 19px;
+    padding: 30px 0px; 
+}
+
+#navbar{
+    display: flex;
+    padding: 0 25px;
+    height: 35px;
+    gap: 68px;
+}
+
+#navbar li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 19px;
+}
+#menu-hebergements{
+    color: var(--main-color);
+    }
+
+/*********MAIN********/
+
 body {
     display: flex;
     justify-content: center;
+    
 }
-header {
-    display: flex;
-}
-#logo img{
-   padding:30px 0px;
-   max-width: 61px;
-   display: block;
-}
-   #espacement{
-    max-width: 950px;
-    display: block;
-}
-#navbar {
-    list-style: none;
-    display: flex;
-    position: absolute;
-    right: 250px;
-    max-width: 279px;
-    padding: 0px 25px;
-  }
-   
-   #navbar li {
-    margin: 0 25px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-  #hebergements{
-    color: #0065FC;
-  }
-  #hebergements:hover{
-    border-top: solid 1px #0065FC;
-    padding-top: 20px;
-  }
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
     }
+
 
 a {
     color: inherit;
@@ -155,18 +156,33 @@ a {
     margin-bottom: 5px;
 }
 
+/**********FOOTER************/
 
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+
+/* Normal devices (more than 1025px) */
+
+@media (min-width:1025px){
+    #menu-hebergements:hover{
+        border-top: 2px solid #0065fc;
+        padding-top:14px;
+        }
+}
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px){
     .hebergements-and-populaires {
         flex-direction: column;
     }
-
+    #menu-hebergements:hover {
+        border-top: 2px solid #0065fc;
+        padding-top:14px;
     .hebergements {
         width: 100%;
     }
@@ -194,8 +210,19 @@ a {
         font-size: 13px;
     }
 }
+}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    #menu-hebergements:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+        padding-bottom:14px;
+        }
+
+
+
+
+
     /* ... */
 }
