@@ -12,6 +12,10 @@
 
 .fa-solid {
     color: var(--main-color);
+    height: 22px;
+    width: 22px;
+    display: flex;
+    
 }
 
 /*******HEADER********/
@@ -41,13 +45,13 @@ header{
     font-weight: normal;
     line-height: 19px;
 }
+
 #menu-hebergements{
     color: var(--main-color);
+    border-top: 2px solid #0065fc;
+    padding-top:14px;
     }
-    #menu-hebergements:hover{
-        border-top: 2px solid #0065fc;
-        padding-top:14px;
-        }
+    
 
         /*********MAIN********/
 
@@ -66,13 +70,26 @@ body {
    h1{
     font-size: 1.375em;
     font-weight: 700;
-      
+    margin: 0px;
+    
+     
+    
 }
+
 
 h2{
     font-size: 18px;
     font-weight: 700;
-    margin: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    
+}
+p {
+    
+    display: flex;
+    align-items: center;
     
 }
 
@@ -82,18 +99,28 @@ a {
     text-decoration: none;
 }
 
+.headline {
+max-width: 1340px;
+
+}
+
+.headline p{
+    margin: 0px;
+    padding-top: 8px;
+}
 /****Formulaire de recherche****/
 
 .search-container{
     display: flex;
-    max-width: 357px;
+    max-width: 377px;
     justify-content: flex-start;
     border-radius: 15px;
     width: 100%;
-    margin: 20px 0px ;
+    margin: 35px 0px ;
+    height: 50px;
 }
 
-.fa-location-dot{
+.fa-solid.fa-location-dot{
     color: black;
     width: 50px;
     height:49px; 
@@ -101,6 +128,8 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+
 
 .mapdot{
     display: flex;
@@ -118,11 +147,8 @@ a {
 
 .search-bar{
     display: flex;
-    background-color: white;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top: 1px solid #f2f2f2 ;
-    border-bottom:1px solid #f2f2f2 ;  
+    
+    
 }
 
 input[type="text"]{
@@ -153,57 +179,97 @@ button{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: #0065FC 1px solid ;
+    max-width: 377px;
+    padding: 15px 16px;
     
 }
 
+.mobile-icon{
+    display: none;
+
+}
+
+ 
 /**********Filtres************/
+
+.global-info-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .filter-container{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    
+    max-width: 1340px;
+    height: auto;
+   
+     
 }
-.filter{
+.filter li {
+    margin: 0px;
+
+    padding: 0px;
+}
+    
+
+.filter {
     display: flex;
     background-color: white;
-    margin: 15px;
-    padding: 4px 19px;
-    border: 2px solid #F2F2F2;
+    margin-right: 15px;
+    padding: 2px 17px;
+    border: 2px solid #d9d9d9;
     border-radius: 25px;
-    justify-content: center;
     align-items: center;
-           
+    height: 42px;       
 }
 
-.filter a{
-    display: flex;
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 700;
-}
 
 .filter:hover{
     background-color: #DEEBFF;
 }
 
+
 .filter-bar ul{
     display: flex;
     flex-wrap: wrap;
+  
     padding: 0px;
-}
-
-.infodot{
-    display: flex;
-    width: 100%;
-    align-items: center;
+    margin: 0px;
     
 }
 
-.infodot i{
-    margin-right: 5px;
-    width: 24px;
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    height: 38px;
+    padding: 35px 0px;
+        
 }
+
+.fa-solid.fa-info {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    font-size: 12px;
+    
+    
+}
+
+#icon-container {
+    height: 24px;
+    width: 24px;
+    padding-right: 10px;
+}
+
+
 
 .section-title {
     margin: 0;
@@ -353,7 +419,7 @@ font-weight: 600;
 @media (max-width: 1024px){
 
     /******** ID ********/
-    #menu-hebergements:hover {
+    #menu-hebergements {
         border-top: 2px solid #0065fc;
         padding-top:14px;
     }
@@ -418,7 +484,7 @@ font-weight: 600;
         left:40%;
         
     }
-    #menu-hebergements:hover{
+    #menu-hebergements {
         border-top: none;
         padding-bottom:14px;
         padding-left: 10px;
@@ -431,12 +497,7 @@ font-weight: 600;
    .desktop-text{
         display:none;
     }
-    .fa-location-dot, {
     
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .fa-magnifying-glass{
         color: white;
@@ -444,6 +505,10 @@ font-weight: 600;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .filter {
+        margin-top: 20px;
     }
 
     .main-container{
