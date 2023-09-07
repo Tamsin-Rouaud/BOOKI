@@ -532,6 +532,7 @@ footer {
         padding-right: 20%;
         border-bottom: 1px solid #0065fc;
         padding-bottom: 15px;
+        display: block;
         
     }
 
@@ -587,6 +588,11 @@ footer {
     }
 
 /********** FILTRE DE RECHERCHE  **********/
+    .filter-container {
+        display: block;
+    }
+
+
     .filter-bar ul {
         justify-content: space-between;
     }
@@ -671,13 +677,14 @@ footer {
     
     .hebergements-subtitle {
         padding-left: 20px;
-        
+        padding-bottom: 20px;
     }
     
 /********** ACTIVITES ***********/
 
     .activites {
         margin-top: 35px;
+        margin-bottom: 35px;
     }
 
     .activites-title {
@@ -711,6 +718,7 @@ footer {
         width: 90%;
         margin-left: 10px;
         padding-bottom: 30px;
+        padding-top: 20px;
     }
 
     .footer-container ul {
@@ -724,7 +732,7 @@ footer {
     }
     .footer-container h3 {
         margin: 0px;
-        padding-top: 20px;
+        
     }
 
 
