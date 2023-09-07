@@ -509,7 +509,7 @@ footer {
 /********** HEADER **********/    
     header {
        text-align: center;
-       flex-direction: column;
+       display: block;
     }
     
     #navbar {
@@ -517,6 +517,7 @@ footer {
         padding: 0;
         justify-content: space-around;
         gap: unset;
+        align-items: center;
     }
 
     #navbar li{
@@ -530,6 +531,18 @@ footer {
         padding-left: 20%;
         padding-right: 20%;
         border-bottom: 1px solid #0065fc;
+        padding-bottom: 15px;
+        
+    }
+
+    #menu-activites {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    /********** HEADLINE **********/
+
+    .headline {
+        margin-left: 20px;
     }
 
     /********** Formulaire de recherche **********/
